@@ -1,0 +1,1379 @@
+21:40:49.131 [JavaFX Application Thread] DEBUG GameApplication      - Logger initialized
+21:40:49.152 [JavaFX Application Thread] DEBUG GameApplication      - Logging settings
+Title: Sorvetinho Adventures
+Version: 1.0
+Width: 900
+Height: 900
+Fullscreen: false
+Intro: false
+Menus: true
+Profiling: false
+Single step:false
+App Mode: RELEASE
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class jogozMenu.JogozSceneFactory
+Dialog Factory: class com.almasb.fxgl.ui.FXGLDialogFactory
+UI Factory: class com.almasb.fxgl.ui.FXGLUIFactory
+Notification Service: class com.almasb.fxgl.gameplay.notification.XboxNotificationView
+Exception Handler: class com.almasb.fxgl.app.FXGLExceptionHandler
+21:40:49.152 [JavaFX Application Thread] DEBUG GameApplication      - Starting FXGL
+21:40:49.170 [JavaFX Application Thread] INFO  FXGL                 - FXGL-0.5.4 on DESKTOP
+21:40:49.170 [JavaFX Application Thread] INFO  FXGL                 - Source code and latest versions at: https://github.com/AlmasB/FXGL
+21:40:49.170 [JavaFX Application Thread] INFO  FXGL                 -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+21:40:49.171 [JavaFX Application Thread] DEBUG FXGL                 - FXGL started
+21:40:49.171 [JavaFX Application Thread] DEBUG FXGL                 - Initializing FXGL
+21:40:49.250 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+21:40:49.311 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:49.619 [JavaFX Application Thread] DEBUG MainWindow           - Creating a JavaFX scene
+21:40:49.670 [JavaFX Application Thread] DEBUG MainWindow           - Target settings size: 900.0 x 900.0
+21:40:49.670 [JavaFX Application Thread] DEBUG MainWindow           - Scaled scene size:    900.0 x 900.0
+21:40:49.670 [JavaFX Application Thread] DEBUG MainWindow           - Scaled ratio: (1.0, 1.0)
+21:40:49.673 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+21:40:49.678 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/fxgl_icon.png
+21:40:49.695 [JavaFX Application Thread] DEBUG MainWindow           - Opening main window
+21:40:50.121 [JavaFX Application Thread] DEBUG MainWindow           - Window border size: (6.0, 35.0)
+21:40:50.121 [JavaFX Application Thread] DEBUG MainWindow           - Scaled size: 900.0 x 900.0
+21:40:50.121 [JavaFX Application Thread] DEBUG MainWindow           - Scaled ratio: (1.0, 1.0)
+21:40:50.121 [JavaFX Application Thread] DEBUG MainWindow           - Scene size: 900.0 x 900.0
+21:40:50.121 [JavaFX Application Thread] DEBUG MainWindow           - Stage size: 906.0 x 935.0
+21:40:50.170 [ForkJoinPool.commonPool-worker-1] DEBUG FS                   - Loaded DesktopFSService
+21:40:50.172 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL                 - Loading FXGL system data
+21:40:50.182 [ForkJoinPool.commonPool-worker-1] DEBUG DesktopFSService     - Reading from: system\fxgl.bundle
+21:40:50.196 [ForkJoinPool.commonPool-worker-1] DEBUG Bundle               - Logging bundle: FXGL
+21:40:50.197 [ForkJoinPool.commonPool-worker-1] DEBUG Bundle               - FXGL.offline.timer.version.check=2018-11-30T10:24:56.478
+21:40:50.198 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL                 - Initializing state machine and application states
+21:40:50.200 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+21:40:50.217 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+21:40:50.232 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.235 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+21:40:50.249 [ForkJoinPool.commonPool-worker-1] DEBUG GameScene            - Game scene initialized: 900x900
+21:40:50.256 [ForkJoinPool.commonPool-worker-1] DEBUG GameWorld            - Game world initialized
+21:40:50.334 [ForkJoinPool.commonPool-worker-1] DEBUG PhysicsWorld         - Physics world initialized: appHeight=900, physics.ppm=50,0
+21:40:50.382 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+21:40:50.388 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/properties/languages/english.properties
+21:40:50.390 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.391 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamBackground.png
+21:40:50.446 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamLogo.png
+21:40:50.451 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.453 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.579 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/music/battle.mp3
+21:40:50.580 [ForkJoinPool.commonPool-worker-1] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@42aea4cc
+21:40:50.582 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/CursorIceCream.png
+21:40:50.596 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL.Menu            - createMenuBodyMainMenu()
+21:40:50.606 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.612 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.615 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.615 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.615 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL.Menu            - createOptionsMenu()
+21:40:50.616 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.616 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.618 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.618 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.619 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.619 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.621 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.621 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.622 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.622 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.623 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/textures/Cherry.png
+21:40:50.692 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+21:40:50.694 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.694 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.695 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBackground.png
+21:40:50.695 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamLogo.png
+21:40:50.695 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.695 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.695 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/music/battle.mp3
+21:40:50.696 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/music/field_of_hopes.mp3
+21:40:50.696 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/music/battle.mp3
+21:40:50.696 [ForkJoinPool.commonPool-worker-1] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@42aea4cc
+21:40:50.696 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/CursorIceCream.png
+21:40:50.705 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL.Menu            - createMenuBodyGameMenu()
+21:40:50.706 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.706 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.707 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.707 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.707 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL.Menu            - createOptionsMenu()
+21:40:50.708 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.709 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.711 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.711 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.712 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.712 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.712 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.713 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.713 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.713 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.714 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png@128.0x128.0
+21:40:50.801 [JavaFX Application Thread] DEBUG FXGL                 - Running preInit()
+21:40:50.896 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - P
+21:40:50.897 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Dev Options - CTRL+0
+21:40:50.898 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+21:40:50.898 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+21:40:50.898 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Move Right - D
+21:40:50.899 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Move Left - A
+21:40:50.899 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Move Up - W
+21:40:50.899 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Move Down - S
+21:40:50.899 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle Advanced Stats - F3
+21:40:50.900 [JavaFX Application Thread] DEBUG MenuEventHandler     - generateDefaultProfile()
+21:40:50.900 [JavaFX Application Thread] DEBUG MenuEventHandler     - Creating default profile
+21:40:50.901 [JavaFX Application Thread] DEBUG EventBus             - Firing event: SaveEvent
+21:40:50.903 [JavaFX Application Thread] DEBUG AudioPlayer          - Saving data to profile
+21:40:50.903 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: audio
+21:40:50.903 [JavaFX Application Thread] DEBUG Bundle               - audio.musicVolume=0.25
+21:40:50.903 [JavaFX Application Thread] DEBUG Bundle               - audio.soundVolume=0.5
+21:40:50.903 [JavaFX Application Thread] DEBUG Input                - Saving data to profile
+21:40:50.903 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: input
+21:40:50.904 [JavaFX Application Thread] DEBUG Bundle               - input.Move Right=D
+21:40:50.904 [JavaFX Application Thread] DEBUG Bundle               - input.Move Up=W
+21:40:50.904 [JavaFX Application Thread] DEBUG Bundle               - input.Toggle Advanced Stats=F3
+21:40:50.904 [JavaFX Application Thread] DEBUG Bundle               - input.Move Left=A
+21:40:50.904 [JavaFX Application Thread] DEBUG Bundle               - input.Move Down=S
+21:40:50.912 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: gameplayStats
+21:40:50.912 [JavaFX Application Thread] DEBUG Bundle               - gameplayStats.playtime=0
+21:40:50.914 [JavaFX Application Thread] DEBUG AchievementManager   - Saving data to profile
+21:40:50.914 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: achievement
+21:40:50.915 [JavaFX Application Thread] INFO  FXGL                 - FXGL initialization took: 1,744 sec
+21:40:50.916 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+21:40:50.920 [JavaFX Application Thread] DEBUG StartupState         - STARTUP
+21:40:50.920 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:50.920 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+21:40:50.936 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> MainMenuState
+21:40:50.942 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.942 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.942 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.943 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.943 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.943 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.946 [JavaFX Application Thread] DEBUG SaveLoadManager      - Checking profiles dir: profiles/
+21:40:50.946 [JavaFX Application Thread] DEBUG SaveLoadManager      - Loading profile names
+21:40:50.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:50.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.950 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:50.951 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+21:40:50.951 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:50.951 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState -> DialogSubState
+21:40:51.112 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+21:40:51.112 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.113 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState <- DialogSubState
+21:40:51.114 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:51.115 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.115 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.116 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+21:40:51.116 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.116 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState -> DialogSubState
+21:40:51.718 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+21:40:51.718 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.719 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState <- DialogSubState
+21:40:51.719 [JavaFX Application Thread] DEBUG SaveLoadManager      - Loading profile: cheater
+21:40:51.720 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:51.721 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.722 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.722 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+21:40:51.723 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.723 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState -> DialogSubState
+21:40:51.724 [FXGL Background Thread 1 ] DEBUG DesktopFSService     - Reading from: .\profiles\cheater\user.profile
+21:40:51.741 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+21:40:51.741 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.742 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState <- DialogSubState
+21:40:51.743 [JavaFX Application Thread] DEBUG EventBus             - Firing event: LoadEvent[type=LOAD_PROFILE]
+21:40:51.743 [JavaFX Application Thread] DEBUG AudioPlayer          - Loading data from profile
+21:40:51.743 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: audio
+21:40:51.743 [JavaFX Application Thread] DEBUG Bundle               - audio.musicVolume=0.053278688524590154
+21:40:51.743 [JavaFX Application Thread] DEBUG Bundle               - audio.soundVolume=0.5
+21:40:51.743 [JavaFX Application Thread] DEBUG Input                - Loading data from profile
+21:40:51.743 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: input
+21:40:51.743 [JavaFX Application Thread] DEBUG Bundle               - input.Move Right=D
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.ToggleSlowMotion=7
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.SpeedDown=5
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.ToggleInvincibility=6
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.Move Up=W
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.Cheat=B
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.IncrementCoins=1
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.ToggleCoins=3
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.Move Left=A
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.SpeedUp=4
+21:40:51.744 [JavaFX Application Thread] DEBUG Bundle               - input.Toggle Advanced Stats=F3
+21:40:51.745 [JavaFX Application Thread] DEBUG Bundle               - input.Move Down=S
+21:40:51.745 [JavaFX Application Thread] DEBUG Bundle               - input.DecrementCoins=2
+21:40:51.746 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: gameplayStats
+21:40:51.749 [JavaFX Application Thread] DEBUG Bundle               - gameplayStats.playtime=373762204709
+21:40:51.749 [JavaFX Application Thread] DEBUG AchievementManager   - Loading data from profile
+21:40:51.750 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: achievement
+21:40:51.751 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:51.752 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.752 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Cheat - B
+21:40:51.752 [JavaFX Application Thread] DEBUG Input                - Registered new binding: IncrementCoins - 1
+21:40:51.752 [JavaFX Application Thread] DEBUG Input                - Registered new binding: DecrementCoins - 2
+21:40:51.752 [JavaFX Application Thread] DEBUG Input                - Registered new binding: ToggleCoins - 3
+21:40:51.753 [JavaFX Application Thread] DEBUG Input                - Registered new binding: SpeedUp - 4
+21:40:51.753 [JavaFX Application Thread] DEBUG Input                - Registered new binding: SpeedDown - 5
+21:40:51.753 [JavaFX Application Thread] DEBUG Input                - Registered new binding: ToggleInvincibility - 6
+21:40:51.753 [JavaFX Application Thread] DEBUG Input                - Registered new binding: ToggleSlowMotion - 7
+21:40:51.754 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.754 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.754 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:51.754 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.756 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.756 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.756 [JavaFX Application Thread] DEBUG SaveLoadManager      - Loading last modified save file
+21:40:51.756 [JavaFX Application Thread] DEBUG SaveLoadManager      - Loading save files
+21:40:51.760 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:40:51.761 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.761 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:40:51.761 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+21:40:51.761 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.762 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState -> DialogSubState
+21:40:51.775 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+21:40:51.775 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:51.776 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState <- DialogSubState
+21:40:51.846 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:40:51.985 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:40:52.344 [JavaFX Application Thread] DEBUG FXGL.Menu            - fireNewGame()
+21:40:52.345 [JavaFX Application Thread] DEBUG GameApplication      - Starting new game
+21:40:52.345 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:52.345 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+21:40:52.357 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState -> LoadingState
+21:40:52.362 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Clearing previous game
+21:40:52.362 [FXGL Background Thread 1 ] DEBUG GameWorld            - Clearing game world
+21:40:52.362 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Clearing physics world
+21:40:52.362 [FXGL Background Thread 1 ] DEBUG GameScene            - Clearing game scene
+21:40:52.363 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Game
+21:40:52.365 [FXGL Background Thread 1 ] DEBUG AudioPlayer          - Resuming music com.almasb.fxgl.audio.Music@6e79da0e
+21:40:52.365 [FXGL Background Thread 1 ] DEBUG AudioPlayer          - Stopping music com.almasb.fxgl.audio.Music@6e79da0e
+21:40:52.404 [FXGL Background Thread 1 ] DEBUG AudioPlayer          - Stopping music com.almasb.fxgl.audio.Music@42aea4cc
+21:40:52.534 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/music/field_of_hopes.mp3
+21:40:52.534 [FXGL Background Thread 1 ] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@6e79da0e
+21:40:52.557 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCream2.png
+21:40:52.561 [FXGL Background Thread 1 ] DEBUG GameScene            - Creating render group for layer: DEFAULT(100000)
+21:40:52.563 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCream2.png
+21:40:52.564 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCream2.png
+21:40:52.565 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCream2.png
+21:40:52.569 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCream2.png
+21:40:52.569 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Physics
+21:40:52.570 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing UI
+21:40:52.570 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/GameBackground.png
+21:40:52.581 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/CursorIceCream.png
+21:40:52.595 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initialization Complete
+21:40:52.595 [FXGL Background Thread 1 ] INFO  InitAppTask          - Game initialization took: 0,233 sec
+21:40:52.596 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:40:52.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+21:40:52.602 [JavaFX Application Thread] DEBUG AppStateMachine      - LoadingState -> PlayState
+21:40:52.651 [JavaFX Application Thread] DEBUG AudioPlayer          - Stopping music com.almasb.fxgl.audio.Music@42aea4cc
+21:40:52.694 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: NoName(1)
+21:40:52.695 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamRed.png
+21:40:52.759 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:52.805 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamOrange.png
+21:40:52.870 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:52.916 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamYellow.png
+21:40:52.981 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:53.029 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamGreen.png
+21:40:53.078 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:53.157 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamBlue.png
+21:40:53.161 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:53.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:53.205 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:53.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamAnil.png
+21:40:53.254 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:53.301 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:53.302 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:53.350 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/IceCreamPink.png
+21:40:53.351 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:53.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:53.397 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:53.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:53.510 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:53.557 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:53.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:53.620 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/Cherry.png
+21:40:53.668 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:53.733 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:53.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:53.797 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:53.861 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:53.861 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:53.941 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:53.944 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.005 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.068 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.069 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.069 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.070 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.133 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.133 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.134 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.135 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.197 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.198 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.199 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.261 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.262 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.263 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.263 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:54.341 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:54.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:54.345 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:54.345 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:54.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:54.405 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:54.468 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:54.469 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:54.532 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:54.533 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:54.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:54.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:54.612 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/DustCloud.png
+21:40:54.629 [JavaFX Application Thread] DEBUG GameScene            - Creating render group for layer: NoName(2)
+21:40:54.643 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:40:54.661 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:54.661 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:54.740 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:54.744 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:54.805 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:54.805 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:54.806 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:54.807 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:54.869 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.870 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.870 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.870 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.932 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.933 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.933 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.934 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:54.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.997 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.998 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:54.999 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.061 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.061 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.062 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.062 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.141 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.143 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.144 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.145 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.205 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.205 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:55.268 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.269 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.269 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.269 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.333 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.334 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.334 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.335 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:55.428 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.429 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.429 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.429 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.510 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.510 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.511 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.512 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:55.572 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.572 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.573 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.573 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.636 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.637 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.637 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.637 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:55.668 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:40:55.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.702 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.702 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:40:55.764 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.764 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.765 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.765 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:55.828 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.829 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.829 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.830 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.910 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.911 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.912 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.912 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:55.973 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.974 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.975 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:55.977 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.036 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.037 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.037 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.038 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.165 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.166 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.167 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.168 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:56.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:40:56.229 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.230 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.230 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.230 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.310 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.310 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.311 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.311 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:56.372 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.373 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.374 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.376 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.436 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.436 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.437 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.437 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:56.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.501 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.501 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.564 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.565 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.565 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.565 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:56.628 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.628 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.629 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.629 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.677 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.677 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.678 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.678 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:56.679 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:40:56.725 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:40:56.758 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.760 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.761 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.761 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:56.884 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.886 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:56.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:57.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.013 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.013 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.013 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.077 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.077 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.078 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.078 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.158 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.160 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.161 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.221 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.221 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.221 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:57.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.285 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.285 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:57.412 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.413 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.413 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.414 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.476 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.477 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.477 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.477 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:57.556 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.558 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.560 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.560 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.620 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.621 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.621 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.622 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:57.684 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:57.684 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:57.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:40:57.732 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:40:57.749 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:57.750 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:57.812 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:57.813 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:57.876 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:57.877 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:57.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:57.960 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.020 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.021 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.084 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:58.084 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:58.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:58.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:58.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:58.150 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:58.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.213 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.213 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.277 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.277 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.278 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.278 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:58.358 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.359 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.359 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.359 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.420 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.420 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.421 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.421 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:58.422 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:40:58.484 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.484 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.485 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.485 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:58.612 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.612 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.612 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.613 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.676 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.676 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.677 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.677 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:58.709 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:40:58.759 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.759 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.760 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.760 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.760 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:40:58.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:58.884 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.884 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:58.950 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:40:59.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.013 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.013 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.077 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.077 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.078 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:40:59.156 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:59.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:59.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:59.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:40:59.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:59.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:59.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:59.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:40:59.412 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.413 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.414 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.415 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.476 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.476 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.477 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.477 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:40:59.557 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.559 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.559 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.608 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:40:59.717 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.718 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.718 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.718 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.764 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:40:59.780 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.781 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.781 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.781 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:40:59.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:40:59.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.845 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.845 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.910 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.910 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.910 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:40:59.911 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.020 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.021 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.021 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.021 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.085 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.085 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.085 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.086 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.213 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.276 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.277 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.277 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.277 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.344 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.344 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:00.420 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.421 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.421 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.421 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.484 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.484 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.484 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.485 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:00.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.612 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.613 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.614 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.614 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:00.676 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.676 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.676 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.677 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.677 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:41:00.742 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.742 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.742 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.742 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:00.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.805 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:00.836 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:00.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.853 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:00.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:00.997 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.998 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.998 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:00.998 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.045 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.093 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.093 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.157 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.205 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.253 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.301 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.301 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.302 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.302 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:01.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.397 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.397 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:01.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.493 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.493 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.541 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.542 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.542 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.542 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:01.605 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.605 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.605 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.605 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:01.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.749 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:01.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.812 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:01.828 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:01.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:01.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.893 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.893 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.958 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:01.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.005 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.245 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.293 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.293 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.293 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.293 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.342 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.405 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:02.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:02.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:02.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.741 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.741 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:02.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:02.836 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:02.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:02.853 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:41:02.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.949 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:02.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.997 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.997 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:02.997 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.093 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.093 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.142 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.142 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.143 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.143 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:03.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:03.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:03.349 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:03.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:03.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:03.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:03.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:03.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:03.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:03.542 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:03.542 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:03.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:03.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.701 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:03.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.812 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:03.828 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:03.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:03.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.957 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.958 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.958 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:03.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:04.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.005 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.005 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.245 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.245 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.245 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.341 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.342 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:04.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:04.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:04.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:04.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:04.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:04.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:04.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:04.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:04.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:04.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:04.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:04.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:41:04.741 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.741 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:04.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:04.837 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:04.853 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.853 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:04.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.900 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:04.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:04.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.157 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.158 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.158 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.205 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.206 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.208 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.208 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.301 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:05.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.397 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.397 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:05.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.493 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.558 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.559 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.559 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.559 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:05.605 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.605 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.606 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.607 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.652 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:05.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:05.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.812 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:05.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:05.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.940 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.941 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.941 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:05.941 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.357 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.358 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:06.404 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:06.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:06.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:06.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:06.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:06.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:06.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:06.549 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:41:06.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:06.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.747 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.747 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.747 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.747 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:06.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.804 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.836 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:06.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.852 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:06.901 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.901 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.901 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.901 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:06.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:06.996 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.141 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.141 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.141 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.142 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.252 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.300 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:07.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.396 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.444 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:07.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.492 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.541 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.541 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.541 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.541 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:07.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.604 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:07.653 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:41:07.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.700 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.748 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:07.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.796 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.828 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/Cherry.png
+21:41:07.829 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:07.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:07.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.940 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:07.941 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.004 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.053 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.053 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.100 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.148 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.196 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.244 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.292 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.356 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.357 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.358 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.358 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:08.405 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.406 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.407 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.408 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.452 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:08.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.548 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:08.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.596 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.644 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamRed.png
+21:41:08.693 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.693 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.693 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.693 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.740 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.740 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.740 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.740 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamOrange.png
+21:41:08.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.820 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.822 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/DustCloud.png
+21:41:08.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.885 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamYellow.png
+21:41:08.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.948 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:08.964 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/collect.wav
+21:41:09.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:09.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:09.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:09.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamGreen.png
+21:41:09.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.140 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.140 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.140 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.141 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamBlue.png
+21:41:09.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.220 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.284 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamAnil.png
+21:41:09.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:09.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:09.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:09.348 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/IceCreamPink.png
+21:41:09.390 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:41:09.390 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+21:41:09.396 [JavaFX Application Thread] DEBUG AppStateMachine      - PlayState -> GameMenuState
+21:41:09.398 [JavaFX Application Thread] DEBUG AudioPlayer          - Pausing music com.almasb.fxgl.audio.Music@6e79da0e
+21:41:09.455 [JavaFX Application Thread] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@42aea4cc
+21:41:09.465 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:09.807 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:09.839 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:10.340 [JavaFX Application Thread] DEBUG FXGL.Menu            - fireExitToMainMenu()
+21:41:10.340 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:10.340 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:10.341 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:10.342 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:10.342 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:10.342 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:10.342 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:10.343 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:10.343 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+21:41:10.343 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:41:10.343 [JavaFX Application Thread] DEBUG AppStateMachine      - GameMenuState -> DialogSubState
+21:41:10.344 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/press.wav
+21:41:10.588 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:10.733 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+21:41:10.733 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:41:10.734 [JavaFX Application Thread] DEBUG AppStateMachine      - GameMenuState <- DialogSubState
+21:41:10.734 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:41:10.739 [JavaFX Application Thread] DEBUG AppStateMachine      - GameMenuState -> MainMenuState
+21:41:10.740 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:12.123 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:12.191 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:12.340 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:12.639 [JavaFX Application Thread] DEBUG FXGL.Menu            - fireExit()
+21:41:12.639 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:12.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:12.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:12.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:12.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:12.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+21:41:12.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+21:41:12.642 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+21:41:12.642 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:41:12.642 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState -> DialogSubState
+21:41:12.642 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/press.wav
+21:41:12.741 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+21:41:13.518 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+21:41:13.518 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+21:41:13.518 [JavaFX Application Thread] DEBUG AppStateMachine      - MainMenuState <- DialogSubState
+21:41:13.518 [JavaFX Application Thread] DEBUG FXGL                 - Exiting FXGL
+21:41:13.518 [JavaFX Application Thread] DEBUG MenuEventHandler     - Creating default profile
+21:41:13.518 [JavaFX Application Thread] DEBUG EventBus             - Firing event: SaveEvent
+21:41:13.518 [JavaFX Application Thread] DEBUG AudioPlayer          - Saving data to profile
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: audio
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - audio.musicVolume=0.053278688524590154
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - audio.soundVolume=0.5
+21:41:13.519 [JavaFX Application Thread] DEBUG Input                - Saving data to profile
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: input
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.Move Right=D
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.ToggleSlowMotion=7
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.SpeedDown=5
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.ToggleInvincibility=6
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.Move Up=W
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.Cheat=B
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.IncrementCoins=1
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.ToggleCoins=3
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.Move Left=A
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.SpeedUp=4
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.Toggle Advanced Stats=F3
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.Move Down=S
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - input.DecrementCoins=2
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: gameplayStats
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - gameplayStats.playtime=390416347777
+21:41:13.519 [JavaFX Application Thread] DEBUG AchievementManager   - Saving data to profile
+21:41:13.519 [JavaFX Application Thread] DEBUG Bundle               - Logging bundle: achievement
+21:41:13.519 [JavaFX Application Thread] DEBUG SaveLoadManager      - Saving profile: cheater
+21:41:13.522 [JavaFX Application Thread] DEBUG DesktopFSService     - Writing to: .\profiles\cheater\user.profile
+21:41:13.527 [JavaFX Application Thread] DEBUG FXGL                 - Shutting down background threads
+21:41:13.528 [JavaFX Application Thread] DEBUG FXGL                 - Saving FXGL system data
+21:41:13.529 [JavaFX Application Thread] DEBUG DesktopFSService     - Writing to: system\fxgl.bundle
+21:41:13.532 [JavaFX Application Thread] DEBUG FXGL                 - Closing logger and exiting JavaFX
