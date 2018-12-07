@@ -1,2 +1,6 @@
 # jogo_fxgl2
-PEDRO THOMAZ MARTINS
+Autor: PEDRO THOMAZ MARTINS
+
+Ano: 2018
+
+Disciplina: Programação de Computadores 2
